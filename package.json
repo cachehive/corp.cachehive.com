@@ -1,0 +1,37 @@
+{
+  "name": "corp.cachehive.io",
+  "version": "0.0.1",
+  "description": "Cachehive corporate website - { express - react - redux }",
+  "engines": {
+    "node": "6.11.x"
+  },
+  "scripts": {
+    "start": "node server",
+    "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cachehive/corp.cachehive.io.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
+}
